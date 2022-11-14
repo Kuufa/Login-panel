@@ -1,0 +1,145 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-panel {
+    width: 450px;
+    background: rgba(255, 255, 255, .6);
+    padding: 4rem;
+    border-radius: 20px;
+    position: relative;
+}
+
+.login-panel-logo {
+    margin-bottom: 2rem;
+}
+
+.login-panel-logo img {
+    width: 125px;
+}
+
+.login-panel-logo,
+.login-panel-header,
+.login-panel-footer {
+    text-align: center;
+}
+
+.login-panel a {
+    text-decoration: none;
+    color: rgb(78, 149, 231);
+}
+
+.login-panel a:hover {
+    text-decoration: underline;
+    color: rgba(238,174,202,1);
+}
+
+.login-panel-header {
+    margin-bottom: 2rem;
+}
+
+.login-panel-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.login-panel-header h1 + div {
+    font-size: calc(1.25rem * .8);
+}
+
+.login-panel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login-panel-form .form-login {
+ position: relative;
+}
+
+.login-panel-form .form-login .form-login-icon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.login-panel-form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.login-panel-form .login-other {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+
+.login-panel-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"],
+.login-panel input[type="email"] {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .5);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+
+.login-panel input:focus {
+    background: white;
+}
+
+.login-panel input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgba(148,187,233,1);
+}
+
+.login-panel-form button {
+    background: rgba(148,187,233,1);
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background 1s;
+}
+
+.login-panel-form button:hover {
+    background-color: rgba(238,174,202,1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+
+    .login-panel {
+        width: 280px;
+        padding: 2rem;
+    }
+}
